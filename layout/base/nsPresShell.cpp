@@ -4542,7 +4542,8 @@ PresShell::RecordStyleSheetChange(StyleSheetHandle aStyleSheet)
       return;
     }
   } else {
-    NS_ERROR("stylo: ServoStyleSheets don't support <style scoped>");
+    NS_WARNING("stylo: ServoStyleSheets don't support <style scoped>");
+    return;
   }
 
   mStylesHaveChanged = true;
