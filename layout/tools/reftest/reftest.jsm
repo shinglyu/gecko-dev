@@ -54,6 +54,9 @@ const FOCUS_FILTER_ALL_TESTS = "all";
 const FOCUS_FILTER_NEEDS_FOCUS_TESTS = "needs-focus";
 const FOCUS_FILTER_NON_NEEDS_FOCUS_TESTS = "non-needs-focus";
 var gFocusFilterMode = FOCUS_FILTER_ALL_TESTS;
+#ifdef MOZ_STYLO
+var gCompareStyloToGecko = false;
+#endif
 
 // "<!--CLEAR-->"
 const BLANK_URL_FOR_CLEARING = "data:text/html;charset=UTF-8,%3C%21%2D%2DCLEAR%2D%2D%3E";
@@ -407,6 +410,12 @@ function InitAndStartRefTests()
     try {
         gFocusFilterMode = prefs.getCharPref("reftest.focusFilterMode");
     } catch(e) {}
+
+#ifdef MOZ_STYLO
+    try {
+        gCompareStyloToGecko = prefs.getBoolPref("reftest.compareStyloToGecko");
+    } catch(e) {}
+#endif
 
     gWindowUtils = gContainingWindow.QueryInterface(CI.nsIInterfaceRequestor).getInterface(CI.nsIDOMWindowUtils);
     if (!gWindowUtils || !gWindowUtils.compareCanvases)
@@ -1294,6 +1303,20 @@ function StartCurrentURI(aState)
     gCurrentURL = gURLs[0]["url" + aState].spec;
 
     RestoreChangedPreferences();
+
+#ifdef MOZ_STYLO
+    if (gCompareStyloToGecko) {
+        var prefs = Components.classes["@mozilla.org/preferences-service;1"].
+            getService(Components.interfaces.nsIPrefBranch);
+        if (gState == 2){
+            logger.info("Disalbing Servo-backed style system");
+            prefs.setBoolPref('layout.stylo.enabled', false);
+        } else {
+            logger.info("Enabling Servo-backed style system");
+            prefs.setBoolPref('layout.stylo.enabled', true);
+        }
+    }
+#endif
 
     var prefSettings = gURLs[0]["prefSettings" + aState];
     if (prefSettings.length > 0) {
