@@ -1,0 +1,22 @@
+# DO NOT EDIT! This is a auto-generated temporary list for Stylo testing
+# Please see the comment at the beginning of reftest-stylo.list
+
+fails == topN-heightA-bottomA.html?border_abspos topN-heightA-bottomA.html?border_abspos
+fails == topN-heightA-bottomN.html?border_abspos topN-heightA-bottomN.html?border_abspos
+fails == topA-heightN-bottomA.html?border_abspos topA-heightN-bottomA.html?border_abspos
+fails == topN-heightN-bottomA.html?border_abspos topN-heightN-bottomA.html?border_abspos
+fails == topA-heightN-bottomN.html?border_abspos topA-heightN-bottomN.html?border_abspos
+fails == topA-heightA-bottomN.html?border_abspos topA-heightA-bottomN.html?border_abspos
+fails == toauto-topN-heightA-bottomA.html?border_abspos toauto-topN-heightA-bottomA.html?border_abspos
+fails == toauto-topN-heightA-bottomN.html?border_abspos toauto-topN-heightA-bottomN.html?border_abspos
+fails == toauto-topA-heightN-bottomA.html?border_abspos toauto-topA-heightN-bottomA.html?border_abspos
+fails == toauto-topN-heightN-bottomA.html?border_abspos toauto-topN-heightN-bottomA.html?border_abspos
+fails == toauto-topA-heightN-bottomN.html?border_abspos toauto-topA-heightN-bottomN.html?border_abspos
+fails == toauto-topA-heightA-bottomN.html?border_abspos toauto-topA-heightA-bottomN.html?border_abspos
+fails == fromauto-topN-heightA-bottomA.html?border_abspos fromauto-topN-heightA-bottomA.html?border_abspos
+fails skip-if(B2G||Mulet) == fromauto-topN-heightA-bottomN.html?border_abspos fromauto-topN-heightA-bottomN.html?border_abspos
+# Initial mulet triage: parity with B2G/B2G Desktop
+fails == fromauto-topA-heightN-bottomA.html?border_abspos fromauto-topA-heightN-bottomA.html?border_abspos
+fails == fromauto-topN-heightN-bottomA.html?border_abspos fromauto-topN-heightN-bottomA.html?border_abspos
+fails == fromauto-topA-heightN-bottomN.html?border_abspos fromauto-topA-heightN-bottomN.html?border_abspos
+fails == fromauto-topA-heightA-bottomN.html?border_abspos fromauto-topA-heightA-bottomN.html?border_abspos

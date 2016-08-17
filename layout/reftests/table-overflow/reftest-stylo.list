@@ -1,0 +1,8 @@
+# DO NOT EDIT! This is a auto-generated temporary list for Stylo testing
+fails == bug785684-x.html bug785684-x.html
+fails == bug785684-y.html bug785684-y.html
+fails skip-if(B2G||Mulet) == table-row-pagination.html table-row-pagination.html
+# Frequently failing on b2g (bug 1155426)
+fails == 963441.html 963441.html
+fails == table-caption-scroll.html table-caption-scroll.html
+fails == table-cell-block-overflow.html table-cell-block-overflow.html

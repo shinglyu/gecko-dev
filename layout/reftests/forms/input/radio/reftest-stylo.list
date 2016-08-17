@@ -1,0 +1,10 @@
+# DO NOT EDIT! This is a auto-generated temporary list for Stylo testing
+fails == label-dynamic.html label-dynamic.html
+fails == checked.html checked.html
+fails == checked-native.html checked-native.html
+fails == checked.html checked.html
+fails == checked-notref.html checked-notref.html
+fails == checked-native.html checked-native.html
+fails == checked-native-notref.html checked-native-notref.html
+fails skip-if(!gtkWidget||Mulet) == gtk-theme-width-height.html gtk-theme-width-height.html
+# bug 1141511: Disable some gtkWidget-dependant reftests on Mulet

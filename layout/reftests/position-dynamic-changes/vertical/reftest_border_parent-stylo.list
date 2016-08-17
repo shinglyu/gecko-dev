@@ -1,0 +1,21 @@
+# DO NOT EDIT! This is a auto-generated temporary list for Stylo testing
+# Please see the comment at the beginning of reftest-stylo.list
+
+fails == topN-heightA-bottomA.html?border_parent topN-heightA-bottomA.html?border_parent
+fails == topN-heightA-bottomN.html?border_parent topN-heightA-bottomN.html?border_parent
+fails == topA-heightN-bottomA.html?border_parent topA-heightN-bottomA.html?border_parent
+fails == topN-heightN-bottomA.html?border_parent topN-heightN-bottomA.html?border_parent
+fails == topA-heightN-bottomN.html?border_parent topA-heightN-bottomN.html?border_parent
+fails == topA-heightA-bottomN.html?border_parent topA-heightA-bottomN.html?border_parent
+fails == toauto-topN-heightA-bottomA.html?border_parent toauto-topN-heightA-bottomA.html?border_parent
+fails == toauto-topN-heightA-bottomN.html?border_parent toauto-topN-heightA-bottomN.html?border_parent
+fails == toauto-topA-heightN-bottomA.html?border_parent toauto-topA-heightN-bottomA.html?border_parent
+fails == toauto-topN-heightN-bottomA.html?border_parent toauto-topN-heightN-bottomA.html?border_parent
+fails == toauto-topA-heightN-bottomN.html?border_parent toauto-topA-heightN-bottomN.html?border_parent
+fails == toauto-topA-heightA-bottomN.html?border_parent toauto-topA-heightA-bottomN.html?border_parent
+fails == fromauto-topN-heightA-bottomA.html?border_parent fromauto-topN-heightA-bottomA.html?border_parent
+fails == fromauto-topN-heightA-bottomN.html?border_parent fromauto-topN-heightA-bottomN.html?border_parent
+fails == fromauto-topA-heightN-bottomA.html?border_parent fromauto-topA-heightN-bottomA.html?border_parent
+fails == fromauto-topN-heightN-bottomA.html?border_parent fromauto-topN-heightN-bottomA.html?border_parent
+fails == fromauto-topA-heightN-bottomN.html?border_parent fromauto-topA-heightN-bottomN.html?border_parent
+fails == fromauto-topA-heightA-bottomN.html?border_parent fromauto-topA-heightA-bottomN.html?border_parent

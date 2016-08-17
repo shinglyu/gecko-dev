@@ -1,0 +1,28 @@
+# DO NOT EDIT! This is a auto-generated temporary list for Stylo testing
+# Please see the comment at the beginning of reftest-stylo.list
+
+fails == leftN-widthA-rightA.html leftN-widthA-rightA.html
+fails == leftN-widthA-rightA-2.html leftN-widthA-rightA-2.html
+fails == leftN-widthA-rightN.html leftN-widthA-rightN.html
+fails == leftN-widthA-rightN-2.html leftN-widthA-rightN-2.html
+fails == leftA-widthN-rightA.html leftA-widthN-rightA.html
+fails == leftN-widthN-rightA.html leftN-widthN-rightA.html
+fails == leftA-widthN-rightN.html leftA-widthN-rightN.html
+fails == leftA-widthA-rightN.html leftA-widthA-rightN.html
+fails == toauto-leftN-widthA-rightA.html toauto-leftN-widthA-rightA.html
+fails == toauto-leftN-widthA-rightA-2.html toauto-leftN-widthA-rightA-2.html
+fails == toauto-leftN-widthA-rightN.html toauto-leftN-widthA-rightN.html
+fails == toauto-leftN-widthA-rightN-2.html toauto-leftN-widthA-rightN-2.html
+fails == toauto-leftA-widthN-rightA.html toauto-leftA-widthN-rightA.html
+fails == toauto-leftN-widthN-rightA.html toauto-leftN-widthN-rightA.html
+fails == toauto-leftA-widthN-rightN.html toauto-leftA-widthN-rightN.html
+fails == toauto-leftA-widthA-rightN.html toauto-leftA-widthA-rightN.html
+fails == fromauto-leftN-widthA-rightA.html fromauto-leftN-widthA-rightA.html
+fails random-if(cocoaWidget) == fromauto-leftN-widthA-rightA-2.html fromauto-leftN-widthA-rightA-2.html
+# Bug 688545
+fails == fromauto-leftN-widthA-rightN.html fromauto-leftN-widthA-rightN.html
+fails == fromauto-leftN-widthA-rightN-2.html fromauto-leftN-widthA-rightN-2.html
+fails == fromauto-leftA-widthN-rightA.html fromauto-leftA-widthN-rightA.html
+fails == fromauto-leftN-widthN-rightA.html fromauto-leftN-widthN-rightA.html
+fails == fromauto-leftA-widthN-rightN.html fromauto-leftA-widthN-rightN.html
+fails == fromauto-leftA-widthA-rightN.html fromauto-leftA-widthA-rightN.html

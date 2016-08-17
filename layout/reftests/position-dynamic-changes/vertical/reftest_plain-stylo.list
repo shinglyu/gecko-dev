@@ -1,0 +1,21 @@
+# DO NOT EDIT! This is a auto-generated temporary list for Stylo testing
+# Please see the comment at the beginning of reftest-stylo.list
+
+fails == topN-heightA-bottomA.html topN-heightA-bottomA.html
+fails == topN-heightA-bottomN.html topN-heightA-bottomN.html
+fails == topA-heightN-bottomA.html topA-heightN-bottomA.html
+fails == topN-heightN-bottomA.html topN-heightN-bottomA.html
+fails == topA-heightN-bottomN.html topA-heightN-bottomN.html
+fails == topA-heightA-bottomN.html topA-heightA-bottomN.html
+fails == toauto-topN-heightA-bottomA.html toauto-topN-heightA-bottomA.html
+fails == toauto-topN-heightA-bottomN.html toauto-topN-heightA-bottomN.html
+fails == toauto-topA-heightN-bottomA.html toauto-topA-heightN-bottomA.html
+fails == toauto-topN-heightN-bottomA.html toauto-topN-heightN-bottomA.html
+fails == toauto-topA-heightN-bottomN.html toauto-topA-heightN-bottomN.html
+fails == toauto-topA-heightA-bottomN.html toauto-topA-heightA-bottomN.html
+fails == fromauto-topN-heightA-bottomA.html fromauto-topN-heightA-bottomA.html
+fails == fromauto-topN-heightA-bottomN.html fromauto-topN-heightA-bottomN.html
+fails == fromauto-topA-heightN-bottomA.html fromauto-topA-heightN-bottomA.html
+fails == fromauto-topN-heightN-bottomA.html fromauto-topN-heightN-bottomA.html
+fails == fromauto-topA-heightN-bottomN.html fromauto-topA-heightN-bottomN.html
+fails == fromauto-topA-heightA-bottomN.html fromauto-topA-heightA-bottomN.html
