@@ -55,7 +55,7 @@ for i in ${REFTEST_LISTS}; do
 done
 
 disable_crash() {
-  find . -name *-stylo.list | xargs grep "${1}" -l  | xargs sed -i "/$1/s/^/# /"
+  find . -name *-stylo.list | xargs grep "${1}" -l  | xargs sed -i "/$1/s/^/skip /"
 }
 
 CRASHES="
