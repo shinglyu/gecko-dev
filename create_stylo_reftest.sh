@@ -14,12 +14,13 @@ create_stylo_reftestlist(){
   # Make all tests to be expected equal
   find . -name ${1}-stylo.list | xargs sed -i "s/!= /== /g"
   # Wrap inline comment to a new line for easier awk processing
-  find . -name ${1}-stylo.list | xargs sed -i "s/ # /\n# /g"
+  find . -name ${1}-stylo.list | xargs perl -i -pe 's/^(.*?) (#.*)/$2\n$1/'
   # "== A.html A-ref.html" => "== A.html A.html"
   find . -name ${1}-stylo.list | xargs gawk -i inplace '{if (/==/) {$(NF)=$(NF-1); print} else {print}}'
   ## Change all "include reftest.list" lines to "include reftest-stylo.list"
   find . -name ${1}-stylo.list | xargs sed -i "s/${1}.list/${1}-stylo.list/g"
 
+  # TODO: ref-pref(x) test-pref(y) ... => ref-pref(y) test-pref(y) ...
   # Use this to check if any file becomes empty due to errors
   # find -name ${1}-stylo.list | xargs wc -l |sort -n -r
 }

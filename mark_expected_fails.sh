@@ -11,10 +11,10 @@ do
   mark_as_fail "${i}"
 done
 
-while grep -R "fails fails" --include *-stylo.list -q
+while grep -R "fails fails " --include *-stylo.list -q
 do
   echo "Clean up multiple fails"
-  find . -name *-stylo.list | xargs sed -i 's/fails fails/fails/g'
+  find . -name *-stylo.list | xargs sed -i 's/fails fails /fails /g'
 done
 
 find . -name *-stylo.list | xargs sed -i 's/^fails #/#/g'
