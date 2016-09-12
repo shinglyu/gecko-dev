@@ -25,11 +25,11 @@ do
   mark_as_fail "${i}"
 done
 
-# for i in $(grep 'UNEXPECTED-PASS' "${1}" | grep -Po '(?<=\| )(.*)(?===)' | xargs -L1 -I{} basename {})
-# do
-#   echo "passes ${i}"
-#   unmark_as_fail "${i}"
-# done
+for i in $(grep 'UNEXPECTED-PASS' "${1}" | grep -Po '(?<=\| )(.*)(?===)' | xargs -L1 -I{} basename {})
+do
+  echo "passes ${i}"
+  unmark_as_fail "${i}"
+done
 
 while grep -R "fails fails " --include *-stylo.list -q
 do
